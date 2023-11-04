@@ -5,6 +5,8 @@ interface Game {
   }[]
 }
 
-export const game: Game = {
+const game: Game = {
   players: []
 }
+
+export { game }

@@ -1,13 +1,13 @@
 import { io } from "../socketio";
 
-import { game, AddPlayerProps } from "../model";
+import { clients, AddPlayerProps } from "../model";
 
 function refreshPlayer() {
-  io.emit('player_refresh', game.players);
+  io.emit('player_refresh', clients.players);
 }
 
 const addPlayer = ({ id, name }: AddPlayerProps) => {
-  game.players.push({ id: id, name });
+  clients.players.push({ id: id, name });
 
   refreshPlayer();
 }
