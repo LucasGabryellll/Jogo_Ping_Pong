@@ -1,0 +1,29 @@
+{
+  "name": "estudosocket",
+  "version": "1.0.0",
+  "description": "Estudo referente a utilização de Sockets com Node JS.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --inspect --transpile-only src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src"
+  },
+  "keywords": [],
+  "author": "@lucasgabryel ",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/cors": "^2.8.15",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.20",
+    "@types/node": "^20.8.9",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@types/socket.io": "^3.0.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  }
+}
